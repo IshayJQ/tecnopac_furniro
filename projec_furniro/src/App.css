@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border: 3spx solid #ccc; /* Borde gris */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.header-center {
+  flex: 2; /* Mayor flex para centrar */
+  text-align: center;
+}
+
+.header-left h1 {
+  color: rgb(80, 77, 77); /* Título negro */
+}
+
+.header-center nav a {
+  margin: 0 30px;
+  color: rgb(80, 77, 77);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-right a {
+  margin: 0 30px; /* Añade margen horizontal entre los enlaces */
+}
+
+.header-right svg {
+  margin: 0 20px; /* Añade margen horizontal entre los enlaces */
+  filter: grayscale(100%) brightness(50%); /* Cambia los logos a gris */
+}
+
+.header-left {
+  flex: 1;
+  text-align: left;
+}
+
+.header-right {
+  flex: 1;
+  text-align: right;
+}
+
+.header-right a {
+  margin: 0 10px;
+}
+
+.header-right img {
+  width: 40px;
+  height: 40px;
+}
+
+.main-div1 {
+  background-color: white; /* Fondo blanco */
+  border: 2px solid #ccc; /* Borde gris */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 20px; /* Margen interno */
+}
+
+.main-div2 {
+  background-color: #fff3e3; /* Fondo marrón */
+  border: 2px solid #ccc; /* Borde gris */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 0px 729px 58px 120px; /* Margen interno */
+  margin: 100px;
+}
+
+.main-div3 {
+  text-align: right; /* Alineado a la derecha */
+  color: rgb(6, 6, 6); /* Texto blanco */
+  background-color: #0f0e0e;
+  margin: 100px;
+}
