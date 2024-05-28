@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ItemForm from './components/ItemForm';
+import ItemList from './components/ItemList';
 import './App.css';
 
 function App() {
+  const [currentItemId, setCurrentItemId] = useState(null);
+
+  const handleSave = () => {
+    setCurrentItemId(null);
+  };
+
+  const handleEdit = (id) => {
+    setCurrentItemId(id);
+  };
  return (
    <div className="App">
      <header className="App-header">
+       <h1>CRUD con React</h1>
        <div className="header-left">
          <h1 class="font-montserrat font-bold text-[34px] leading-10">Furniro</h1>
        </div>
@@ -24,6 +36,8 @@ function App() {
        </div>
      </header>
      <main>
+       <ItemForm itemId={currentItemId} onSave={handleSave} />
+       <ItemList onEdit={handleEdit} />
        <div className="main-div1">
          <div className="main-div2">
            <div className="main-div3">
